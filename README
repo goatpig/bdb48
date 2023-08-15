@@ -3,3 +3,13 @@ Berkeley DB 4.8.30: (April  9, 2010)
 This is version 4.8.30 of Berkeley DB from Oracle.  To view release and
 installation documentation, load the distribution file docs/index.html
 into your web browser.
+
+--------------
+
+addendum: (August 15, 2023)
+
+- Fixed a compilation issue with modern gcc (simple rename to avoid
+  name clash in dbinc/atomic.h:179)
+- Added a dockerfile to build a ubuntu base image with bdb 4.8 built
+  and installed in /usr/lib, for the purpose of build bitcoin core and/or
+  elements from that image.
